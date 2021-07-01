@@ -1,11 +1,11 @@
 package com.target;
 
 public class methodsException {
-    static void method1() throws customexception{
+    static void method1() throws customException{
         try{
             method2();
         }catch (Exception e){
-            throw new customexception();
+            throw new customException();
         }
     }
     static void method2(){
@@ -15,7 +15,7 @@ public class methodsException {
     public static void main(String[] args) {
         try{
             method1();
-        }catch (customexception e){
+        }catch (customException e){
             System.out.println(e);
         }
     }
